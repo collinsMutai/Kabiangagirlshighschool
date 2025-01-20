@@ -1,0 +1,259 @@
+:host {
+  margin-top: 80px;
+}
+
+.carousel-inner {
+  position: relative;
+  height: 100vh;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  animation: fadeIn 2s ease-out;
+}
+
+.image-container {
+  position: relative;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 60%;
+  left: 160px;
+  transform: translateY(-50%);
+  text-align: left;
+  color: #fff;
+  padding: 20px;
+  max-width: 50%;
+  height: 400px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  opacity: 0;
+  animation: fadeInCaption 2s ease-out forwards;
+  transition: transform 0.5s ease, background 0.5s ease;
+}
+
+.carousel-caption:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: translateY(-50%) scale(1.05);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.caption-title {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 85px;
+  letter-spacing: 1.1;
+  margin-top: 3px;
+  opacity: 0;
+  animation: fadeInTitle 2s ease-out 1s forwards;
+  transition: opacity 0.6s ease;
+}
+
+.caption-subtitle {
+  font-size: 16px;
+  letter-spacing: 1.1;
+  font-weight: 600;
+  opacity: 0;
+  animation: fadeInSubtitle 2s ease-out 0.5s forwards;
+  transition: opacity 0.8s ease;
+}
+
+.caption-text {
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 1;
+  font-weight: 300;
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeInText 2s ease-out 1.5s forwards;
+  transition: opacity 1s ease;
+}
+
+.caption-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.caption-buttons .about-btn {
+  font-size: 15px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  opacity: 0;
+  animation: fadeInButton 2s ease-out 2s forwards;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.caption-buttons .about-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.caption-buttons .contact-btn {
+  font-size: 15px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fff;
+  border: 2px solid #fff;
+  outline: none;
+  background-color: transparent;
+  opacity: 0;
+  animation: fadeInButton 2s ease-out 2.2s forwards;
+  transition: background-color 0.5s ease, color 0.5s ease,
+    border-color 0.5s ease;
+}
+
+.caption-buttons .contact-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInCaption {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInButton {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSubtitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  :host {
+    margin-top: 70px;
+  }
+
+  .carousel-caption {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  :host {
+    margin-top: 60px;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+  }
+
+  .caption-title {
+    font-size: 65px;
+  }
+
+  .caption-subtitle {
+    font-size: 14px;
+  }
+
+  .caption-text {
+    font-size: 16px;
+  }
+
+  .caption-buttons .about-btn,
+  .caption-buttons .contact-btn {
+    padding: 7px 15px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 426px) {
+  .caption-title {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 1;
+  }
+
+  .caption-subtitle {
+    font-size: 15px;
+  }
+
+  .caption-text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .caption-buttons .about-btn,
+  .caption-buttons .contact-btn {
+    padding: 7px 15px;
+    font-size: 15px;
+  }
+}
