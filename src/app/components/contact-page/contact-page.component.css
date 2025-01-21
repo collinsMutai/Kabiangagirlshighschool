@@ -1,0 +1,128 @@
+.banner {
+  padding: 100px 0px;
+  background: url("https://jupiterx.artbees.net/logistic/wp-content/uploads/sites/431/2020/05/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: fixed;
+  height: 40vh;
+}
+
+.contact-info {
+  padding: 50px 0px;
+  background-color: #fff;
+  margin-top: -30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.contact-item {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.email-item {
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.contact-item i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 18px;
+  color: #333;
+  margin-top: 0;
+}
+
+.contact-item div .subtitle {
+  font-size: 14px;
+  font-family: "Merriweather Sans", serif;
+  color: #677294;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-item div .title {
+  font-size: 16px;
+  font-family: "Merriweather Sans", serif;
+  font-weight: 700;
+  color: #2c234d;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.4px;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info {
+    padding: 20px 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: auto;
+  }
+
+  .contact-item {
+    gap: 10px;
+  }
+
+  .contact-item i {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .contact-item div .subtitle {
+    font-size: 12px;
+  }
+
+  .contact-item div .title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 30px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .contact-item {
+    flex-direction: column;
+
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .contact-item i {
+    font-size: 30px;
+  }
+
+  .contact-item p {
+    font-size: 16px;
+  }
+
+  .contact-item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
