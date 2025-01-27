@@ -7,11 +7,12 @@ import {
   Validators,
 } from '@angular/forms';
 import * as L from 'leaflet';
+import { BannerComponent } from '../banner/banner.component';
 
 @Component({
   selector: 'app-contact-page',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, BannerComponent],
   templateUrl: './contact-page.component.html',
   styleUrls: ['./contact-page.component.css'],
 })
