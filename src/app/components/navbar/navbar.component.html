@@ -4,12 +4,21 @@
   </div>
   <div class="nav-links">
     <a routerLink="/">Home</a>
-    <a routerLink="/about">About</a>
+
+    <div class="dropdown">
+      <a class="dropdown-toggle">About</a>
+      <div class="dropdown-menu">
+        <a routerLink="/history">History</a>
+        <a routerLink="/vision-mission">Vision & Mission</a>
+      </div>
+    </div>
+
     <a routerLink="/administration">Administration</a>
     <a routerLink="/gallery">Gallery</a>
     <a routerLink="/services">Services</a>
     <a routerLink="/contact">Contact</a>
   </div>
+
   <div class="social-icons">
     <a href="#" class="social-icon">
       <i class="fab fa-facebook-f"></i>

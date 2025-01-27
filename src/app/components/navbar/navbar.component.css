@@ -1,4 +1,3 @@
-/* Default Navbar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -33,6 +32,42 @@
   text-decoration: none;
   color: #fff;
   font-size: 16px;
+}
+
+.navbar .nav-links .dropdown {
+  position: relative;
+}
+
+.navbar .nav-links .dropdown .dropdown-toggle {
+  cursor: pointer;
+}
+
+.navbar .nav-links .dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #09212b;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 200px; /* Adjust the width here */
+  max-width: 300px; 
+}
+
+.navbar .nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .nav-links .dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.navbar .nav-links .dropdown-menu a:hover {
+  background-color: #1d9bf0;
 }
 
 .navbar .social-icons {

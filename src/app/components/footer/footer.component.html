@@ -13,7 +13,14 @@
     <h4>Menu</h4>
     <ul>
       <li><a routerLink="/home">Home</a></li>
-      <li><a routerLink="/about">About Us</a></li>
+
+      <li class="dropdown">
+        <a class="dropdown-toggle" href="#">About Us</a>
+        <ul class="dropdown-menu">
+          <li><a href="/history">History</a></li>
+          <li><a href="/vision-mission">Vision & Mission</a></li>
+        </ul>
+      </li>
       <li><a routerLink="/administration">Administration</a></li>
       <li><a routerLink="/gallery">Gallery</a></li>
       <li><a routerLink="/services">Services</a></li>

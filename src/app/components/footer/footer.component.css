@@ -4,16 +4,21 @@
   padding: 100px 160px;
   background-color: #333;
   color: #fff;
+  flex-wrap: wrap;
+  height: auto;
 }
 
 .footer-column {
   flex: 1;
   padding: 20px;
+  min-width: 250px;
 }
 
 .footer-column h3 {
   margin-bottom: 20px;
   font-size: 18px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .footer-column p {
@@ -38,7 +43,46 @@
 }
 
 .footer-column ul li a:hover {
-  color: #ff7f50;
+  color: #fff;
+}
+
+.footer-column .dropdown {
+  position: relative;
+}
+
+.footer-column .dropdown .dropdown-toggle {
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-column .dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #09212b;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 200px;
+  max-width: 300px;
+  z-index: 10;
+}
+
+.footer-column .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.footer-column .dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-column .dropdown-menu a:hover {
+  background-color: #1d9bf0;
 }
 
 .social-icons {
@@ -102,4 +146,8 @@
     height: 50px;
     font-size: 24px;
   }
+}
+
+.footer-container {
+  position: relative;
 }
